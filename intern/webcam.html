@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1200">
+    <title>Webcam Flugplatz - MFG Zillhausen</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .webcam-container { max-width: 1200px; margin: 2rem auto; padding: 1rem; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 5px; text-align: center; }
+        .webcam-container img { max-width: 100%; border: 1px solid #ddd; }
+        .webcam-container p { color: #666; margin-top: 1rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Logo MFG Zillhausen"><span>MFG Zillhausen</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="../ueber-uns.html">Über Uns</a></li>
+                    <li><a href="../flugplatz.html">Flugplatz</a></li>
+                    <li><a href="../mitglied-werden.html">Mitglied werden</a></li>
+                    <li><a href="../galerie.html">Galerie</a></li>
+                    <li><a href="../termine.html">Termine</a></li>
+                    <li><a href="webcam.html" class="active">Webcam</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <header class="page-header">
+            <div class="container"><h1>Webcam Flugplatz</h1><p>Ein exklusiver Blick für unsere Mitglieder.</p></div>
+        </header>
+        <section class="section">
+            <div class="container">
+                <div class="webcam-container">
+                    <img src="platzbild.jpg" alt="Aktuelles Bild vom Flugplatz">
+                    <p>Dieses Bild wird automatisch alle 20 Minuten aktualisiert. Letztes Update: <span id="datetime"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>var dt = new Date(); document.getElementById('datetime').innerHTML = dt.toLocaleString('de-DE');</script>
+</body>
+</html>
